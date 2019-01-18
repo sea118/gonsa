@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="row mbr-justify-content-center">
+        <div *ngFor="let ran of range" class="col-lg-6 mbr-col-md-10">
+            <div class="info-box {{ran.color}}">
+                <span class="info-box-icon"><i class="fa {{ran.icon}}"></i></span>
+                <div class="info-box-content">
+                    <span class="info-box-text">{{ran.nombre}}</span>
+                    <span class="progress-description2">
+                <p>{{ran.descripcion}}</p></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

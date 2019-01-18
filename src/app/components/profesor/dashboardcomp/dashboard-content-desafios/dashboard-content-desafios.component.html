@@ -1,0 +1,38 @@
+<section class="precios seccion">
+    <h4>vista profesor</h4>
+    <div class="contenedor">
+        <div class="well">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Titulo</th>
+                        <th>Resumen desafío</th>
+                        <th>Descripcion desafío</th>
+                        <th>Objetiv desafío</th>
+                        <th>Fecha creacion</th>
+                        <th>Ultima modificacion</th>
+                        <th>Categoria</th>
+                        <th style="width: 36px;"></th>
+                    </tr>
+                </thead>
+                <tbody *ngFor="let desa of desafios">
+                    <tr>
+                        <td>{{desa.id}}</td>
+                        <td>{{desa.tokenId}}</td>
+                        <td>{{desa.resumen}}</td>
+                        <td>{{desa.descripcion}}</td>
+                        <td>{{desa.objetivo}}</td>
+                        <td>{{desa.fecha| date:'y'}}</td>
+                        <td>{{desa.modificacion | date: 'short' }}</td>
+                        <td>{{desa.categoria}}</td>
+                        <td>
+                            <a href="user.html"><i class="cui-pencil"></i></a>
+                            <a href="#myModal" role="button" data-toggle="modal"><i class="cui-pencil"></i></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
